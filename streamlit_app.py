@@ -142,7 +142,7 @@ if uploaded_files:
             st.stop()
 
         try:
-            model = genai.GenerativeModel('gemini-1.5-flash')  # Correct model name
+            model = genai.GenerativeModel('gemini-2.5-flash')  # Correct model name
         except Exception as e:
             st.error(f"Failed to initialize Gemini model: {e}")
             st.stop()
